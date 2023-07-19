@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web romote control for the ROBOT">
+    <title>Remote-ROBOT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+.headings {
+     text-align:center; 
+     color:rgba(33, 31, 31, 0.911);
+     background-color: white;
+     font-family:cursive
+}
+.heading1 { 
+    font-size:250%;
+}
+.hedaing2 {
+    font-size:200%;
+}
+
+.buttondiv{
+    padding:50px;
+    text-align: center;
+}
+.button{
+    cursor: pointer;
+    padding:15px 20px;
+    font-size: 44px; 
+    border-radius:20px;
+    background-color:rgba(33, 31, 31, 0.911);
+    color: white;
+    margin:2px 5px;
+}
+form {
+    display: inline-block;
+}
+
+</style>
+<body style="background-color:rgba(115, 130, 157, 0.737);">
+    <br><br>
+    <h1 class= "headings heading1">Smart Methods</h1>
+    <h2 class="headings hedaing2" >Remote</h2>
+    
+    <div class="buttondiv">
+    <form action="Forward.php" method="post">
+    <button class="button" title="Forward"><i class="fa-solid fa-chevron-up"></i></button>
+    </form>
+    <br><br>
+
+    <form action="Left.php" method="post">
+    <button class="button" title="Left"><i class="fa-solid fa-chevron-left"></i></button>
+    </form>    
+
+    <form action="Stop.php" method="post">
+    <button class="button" title="Stop"><i class="fa-solid fa-stop"></i></button>
+    </form>
+
+    <form action="Right.php" method="post">
+    <button title="Right" class="button"><i class="fa-solid fa-chevron-right"></i></button>
+    </form><br><br>
+
+    <form action="Backward.php" method="post">
+    <button class="button" title="Backward"><i class="fa-solid fa-chevron-down"></i></button>
+    </form>
+    </div> 
+
+</body>
+</html>
